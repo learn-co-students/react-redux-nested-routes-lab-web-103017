@@ -13,6 +13,7 @@ class PetsNew extends Component {
 
   handleOnSubmit = event => {
     event.preventDefault();
+    console.log("in submit", this.state);
     const { addPet, history } = this.props
     addPet(this.state);
     history.push('/pets');
